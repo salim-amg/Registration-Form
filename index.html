@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">Decostyle28</h1>
+      <p id="description">Soyez au courant des dernières nouveautés !</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="surname-label" for="name">Entrez votre prénom: <input required placeholder="Jules" id="name" type="text"/><label>
+          <label id="name-label" for="name">Entrez votre nom: <input required placeholder="Dubois" id="name" type="text"/><label>
+          <label id="email-label" for="email">Entrez votre adresse e-mail: <input required placeholder="jules-dubois@gmail.com" id="email" type="email"/></label>
+          <label id="number-label" for="number">Entrez votre âge: <input required placeholder="25" id="number" type="number" min="18" max="100"/><label>
+          <label for="password">Créez un mot de passe: <input id="password" name="password" type="password" pattern="[a-z0-9]{8,}" required /></label>
+        </fieldset>
+        <fieldset id="account-type">
+            <h3>Quelle type de compte souhaitez-vous créer ?</h3>
+            <label class="label" for="personal-account"><input type="radio" id="personal-account" name="P-E" class="inline" value="personla-account">Particulier</label>
+            <label class="label" for="business-account"><input type="radio" id="business-account" name="P-E" class="inline" value="business-account">Entrepreneur</label>
+            <br>
+            <hr>
+            <br>
+            <h3>Quelle pièce voudriez-vous rénover ?</h3>
+            <label class="label" for="business-account"><input type="checkbox" id="business-account" name="P-E" class="inline" value="living-room">salon</label>
+            <label class="label" for="business-account"><input type="checkbox" id="business-account" name="P-E" class="inline" value="kitchen">cuisine</label>
+            <label class="label" for="business-account"><input type="checkbox" id="business-account" name="P-E" class="inline" value="bedroom">chambre</label>
+            <label class="label" for="business-account"><input type="checkbox" id="business-account" name="P-E" class="inline" value="bathroom">salle de bain</label>
+            <label class="label" for="business-account"><input type="checkbox" id="business-account" name="P-E" class="inline" value="other">autre...</label>
+            <br>
+            <hr>
+            <br>
+            <label for="dropdown">Quelle est votre style de design ?
+              <select id="dropdown" name="dropdown">
+                <option value="">(Choisissez)</option>
+                <option value="1">Moderne</option>
+                <option value="2">Traditionnel</option>
+                <option value="3">Contemporain</option>
+                <option value="4">Industriel</option>
+                <option value="5">Transitionnel</option>
+                <option value="6">Rustique</option>
+                <option value="7">Bohème</option>
+                <option value="8">Minimaliste</option>
+                <option value="9">autres...</option>
+             </select>
+           </label>
+           <label for="comment">
+            <textarea id="comment" name="comment" rows="3" cols="30" placeholder="Commentaire . . ."></textarea>
+           </label>
+        </fieldset>
+        <input id="submit" type="submit" value="S'inscrire"/>
+      </form>
+    </div>
+  </body>
+  <footer>
+  </footer>
+</html>
